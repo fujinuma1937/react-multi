@@ -1,7 +1,7 @@
 const About = ()=>{
   return (
     <section>
-      <p>サイトの説明文が入ります</p>
+      <p　className="text-white text-center">説明文が入ります</p>
     </section>
   )
 }

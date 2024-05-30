@@ -1,0 +1,14 @@
+{
+  "/index.html": {
+    "title": "サイトタイトル",
+    "description": "トップページの説明が入ります"
+  },
+  "/sub/index.html": {
+    "title": "サブページ",
+    "description": "サブページの説明が入ります"
+  },
+  "/sub/detail.html": {
+    "title": "サブページ詳細",
+    "description": "サブページ詳細の説明が入ります"
+  }
+}

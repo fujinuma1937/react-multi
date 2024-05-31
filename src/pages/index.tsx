@@ -10,5 +10,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <Header />
     <Main />
     <Footer />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

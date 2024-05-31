@@ -1,4 +1,4 @@
-import Title from "../../parts/Title";
+import Title from "@/@/parts/Title";
 
 const IndexMain = () => {
   return (

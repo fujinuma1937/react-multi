@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "@/layouts/Header";
-import Main from "./IndexMain";
+import Main from "@/pages/IndexMain";
 import Footer from "@/layouts/Footer";
 import "@/index.css";
 

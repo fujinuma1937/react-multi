@@ -10,5 +10,9 @@
   "/sub/detail.html": {
     "title": "サブページ詳細",
     "description": "サブページ詳細の説明が入ります"
+  },
+  "/admin/index.html": {
+    "title": "管理画面",
+    "description": ""
   }
 }

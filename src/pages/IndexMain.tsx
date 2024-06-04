@@ -1,6 +1,6 @@
-import Title from "@/parts/Title";
-import About from "@/sections/About";
-import Counter from "@/sections/Counter";
+import Title from "@/components/front/Title";
+import About from "@/components/front/About";
+import Counter from "@/components/front/Counter";
 
 const IndexMain = () => {
   return (

@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "@/pages/admin/components/Login";
-import Menu from "@/pages/admin/components/Menu";
+import Login from "@/components/admin/Login";
+import Menu from "@/components/admin/Menu";
 
 const IndexMain = () => {
   const siteTitle = "サイトタイトル";

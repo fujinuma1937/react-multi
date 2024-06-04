@@ -13,5 +13,8 @@
   },
   "/admin/index.html": {
     "title": "管理メニュー | ログイン"
+  },
+  "/admin/menu/index.html": {
+    "title": "管理メニュー | メニュー"
   }
 }

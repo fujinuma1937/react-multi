@@ -1,11 +1,4 @@
-type MenuProps = { siteTitle: string };
-
-const Menu: React.FC<MenuProps> = ({ siteTitle }) => {
-  return (
-    <div>
-      <header>{siteTitle}</header>
-      <main></main>
-    </div>
-  );
+const Menu: React.FC = () => {
+  return <div className="p-4 w-full">メニューが出ます</div>;
 };
 export default Menu;

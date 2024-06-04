@@ -7,7 +7,6 @@ import axios from "axios";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
 
 type loginProps = {
   siteTitle: string;
@@ -20,7 +19,6 @@ const Login: React.FC<loginProps> = ({ siteTitle }) => {
     password: z.string().min(1, "パスワードを入力してください"),
   });
   type loginDataType = z.infer<typeof loginDataSchema>;
-  const navigate = useNavigate();
 
   const {
     register,
@@ -29,14 +27,13 @@ const Login: React.FC<loginProps> = ({ siteTitle }) => {
   } = useForm<loginDataType>({ resolver: zodResolver(loginDataSchema) });
 
   const initialLogin: SubmitHandler<loginDataType> = async (data) => {
-    navigate("/admin/menu/");
     const response = await axios.post(`${apiUrl}/login.php?API_KEY=${apiKey}`, {
       data,
     });
     if (response.status === 200) {
-      navigate("/admin/menu/");
+      console.log("ログイン成功");
     } else {
-      navigate("/admin/menu/");
+      console.log("ログイン失敗");
     }
   };
 

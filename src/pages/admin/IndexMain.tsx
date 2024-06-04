@@ -1,19 +1,16 @@
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "@/pages/admin/components/Login";
-import { useState } from "react";
-import { Divide } from "lucide-react";
+import Menu from "@/pages/admin/components/Menu";
 
 const IndexMain = () => {
-  const [isAuth, setIsAuth] = useState(false);
+  const siteTitle = "サイトタイトル";
   return (
-    <main className="relative w-screen h-screen bg-gray-200">
-      <BrowserRouter>
-        <Routes>
-          {isAuth && <div>サイドバー</div>}
-          <Route path="/admin/" element={<Login />} />
-        </Routes>
-      </BrowserRouter>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/admin/" element={<Login siteTitle={siteTitle} />} />
+        <Route path="/admin/menu/" element={<Menu siteTitle={siteTitle} />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 export default IndexMain;

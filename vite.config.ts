@@ -15,6 +15,7 @@ const metaData = JSON.parse(
 );
 
 export default defineConfig({
+  envDir: resolve(__dirname, "env"),
   root: resolve(__dirname, "src/pages"),
   resolve: {
     alias: {
@@ -29,6 +30,7 @@ export default defineConfig({
         main: resolve(__dirname, "src/pages/index.html"),
         sub: resolve(__dirname, "src/pages/sub/index.html"),
         subDetail: resolve(__dirname, "src/pages/sub/detail.html"),
+        admin: resolve(__dirname, "src/pages/admin/index.html"),
       },
     },
   },

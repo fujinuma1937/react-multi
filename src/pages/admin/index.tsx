@@ -6,5 +6,5 @@ import Main from "@/pages/admin/IndexMain";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Main />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

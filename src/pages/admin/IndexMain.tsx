@@ -1,6 +1,6 @@
 import Login from "@/components/admin/Login";
 
 const IndexMain = () => {
-  return <Login siteTitle="管理画面" />;
+  return <Login  />;
 };
 export default IndexMain;

@@ -8,10 +8,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 
-type loginProps = {
-  siteTitle: string;
-};
-const Login: React.FC<loginProps> = ({ siteTitle }) => {
+const Login = () => {
   const apiUrl = import.meta.env.VITE_API_URL;
   const apiKey = import.meta.env.VITE_API_KEY;
   const loginDataSchema = z.object({
@@ -43,8 +40,6 @@ const Login: React.FC<loginProps> = ({ siteTitle }) => {
         <Card className="absolute left-0 right-0 top-0 bottom-0 m-auto h-fit w-11/12 md:w-fit">
           <CardHeader>
             <CardTitle className="text-lg md:text-xl text-center">
-              {siteTitle}
-              <br className="md:hidden" />
               管理画面ログイン
             </CardTitle>
             <img

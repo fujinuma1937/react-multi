@@ -1,6 +1,6 @@
 {
   "/index.html": {
-    "title": "サイトタイトル",
+    "title": "トップページ",
     "description": "トップページの説明が入ります"
   },
   "/sub/index.html": {
@@ -12,7 +12,6 @@
     "description": "サブページ詳細の説明が入ります"
   },
   "/admin/index.html": {
-    "title": "サイトタイトル | 管理メニュー",
-    "description": ""
+    "title": "管理メニュー | ログイン"
   }
 }

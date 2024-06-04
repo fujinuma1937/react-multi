@@ -9,17 +9,17 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
-const loginDataSchema = z.object({
-  id: z.string().min(1, "idを入力してください"),
-  password: z.string().min(1, "パスワードを入力してください"),
-});
-type loginDataType = z.infer<typeof loginDataSchema>;
 type loginProps = {
   siteTitle: string;
 };
 const Login: React.FC<loginProps> = ({ siteTitle }) => {
   const apiUrl = import.meta.env.VITE_API_URL;
   const apiKey = import.meta.env.VITE_API_KEY;
+  const loginDataSchema = z.object({
+    id: z.string().min(1, "idを入力してください"),
+    password: z.string().min(1, "パスワードを入力してください"),
+  });
+  type loginDataType = z.infer<typeof loginDataSchema>;
   const navigate = useNavigate();
 
   const {
@@ -29,6 +29,7 @@ const Login: React.FC<loginProps> = ({ siteTitle }) => {
   } = useForm<loginDataType>({ resolver: zodResolver(loginDataSchema) });
 
   const initialLogin: SubmitHandler<loginDataType> = async (data) => {
+    navigate("/admin/menu/");
     const response = await axios.post(`${apiUrl}/login.php?API_KEY=${apiKey}`, {
       data,
     });

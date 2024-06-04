@@ -16,7 +16,7 @@ const metaData = JSON.parse(
 
 export default defineConfig({
   envDir: resolve(__dirname, "env"),
-  root: resolve(__dirname, "src/pages"),
+  root: resolve(__dirname, "src/pages/"),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
